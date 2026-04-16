@@ -99,6 +99,7 @@ class FlaskAppTestCase(unittest.TestCase):
         data = response.get_json()
         self.assertIn("error", data)
         self.assertIn("some_undefined_variable", data["error"])
+        # self.assertIn("some_undefined_variable", data["error"])
 
 
 if __name__ == "__main__":
